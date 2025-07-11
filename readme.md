@@ -16,13 +16,13 @@ fastapi-mongo-crud/
 ## Prerequisites
 
 Installations:
-   -    Python 3.10+
+   -  Python 3.10+
    -  pip (Python package manager)
    - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) account
    -  Git 
 
  
-  Steps :
+Steps :
  1. Clone the Project
 >     git clone https://github.com/your-username/fastapi-mongo-crud.git 
 >     cd fastapi-mongo-crud
@@ -46,7 +46,7 @@ Initially, I attempted to use MongoDB Atlas by setting the URI as shown above. H
 Option B: MongoDB (Local)
 If Atlas doesn't connect, we can use our local MongoDB:
 
-> MONGO_URI=mongodb://localhost:27017
+> MONGO_URL=mongodb://localhost:27017
 
 5. Database Configuration
 Our code should use the `.env` variable like so:
@@ -62,12 +62,12 @@ Our code should use the `.env` variable like so:
 
 -   Visit Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
   
-  ## API Endpoints
+## API Endpoints
 
 All endpoints are prefixed with the root URL:  
 `http://localhost:8000`
 
-## API Endpoints (Point-wise Format)
+## API Endpoints
 
 Base URL: `http://localhost:8000`
 
@@ -86,7 +86,7 @@ Base URL: `http://localhost:8000`
     
     -   Description: Retrieves a list of all users stored in the database.
         
-4.    **GET /user/{name}**
+4.  **GET /user/{name}**
     
     -   Description: Retrieves a specific user by their name.
         
